@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">
+            How To Reach Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contact">
+    <h1 class="lg-heading">
+      Contact
+      <span class="text-secondary">Me</span>
+    </h1>
+    <h2 class="sm-heading">
+      This is how you can reach me...
+    </h2>
+    <div class="boxes">
+      <div>
+        <span class="text-secondary">Email: </span> soheilfallah.sf7@gmail.com
+      </div>
+      <div>
+        <span class="text-secondary">Phone: </span> 09118441500
+      </div>
+      <div>
+        <span class="text-secondary">Address: </span> lahijan
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2018
+  </footer>
+
+  <script>
+     
+ // Select DOM Items
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+const navItems = document.querySelectorAll('.nav-item');
+
+// Set Initial State Of Menu
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add('close');
+    menu.classList.add('show');
+    menuNav.classList.add('show');
+    menuBranding.classList.add('show');
+    navItems.forEach(item => item.classList.add('show'));
+
+    // Set Menu State
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove('close');
+    menu.classList.remove('show');
+    menuNav.classList.remove('show');
+    menuBranding.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
+
+    // Set Menu State
+    showMenu = false;
+  }
+}
+ 
+  </script>
+</body>
+
+</html>
