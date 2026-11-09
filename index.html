@@ -1,150 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soheil Fallah Bagherinezhad, PhD student at the University of Trento</title>
+  <meta name="description" content="Soheil Fallah Bagherinezhad is a PhD student at the University of Trento working on photonic computing accelerators, high-speed FPGA datapaths on the RFSoC and approximate computing.">
+  <meta name="author" content="Soheil Fallah Bagherinezhad">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://soheilfb.github.io/">
 
-  <link rel="stylesheet" href="css/main.css">
-  <title>About Me</title>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Soheil Fallah Bagherinezhad">
+  <meta property="og:description" content="PhD student at the University of Trento. High-speed FPGA datapaths for photonic computing accelerators, and approximate computing.">
+  <meta property="og:url" content="https://soheilfb.github.io/">
+  <meta property="og:image" content="https://soheilfb.github.io/img/portrait.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Soheil Fallah Bagherinezhad",
+    "jobTitle": "PhD student",
+    "knowsLanguage": ["English", "Persian"],
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Trento" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Guilan" },
+    "email": "mailto:s.fallah@unitn.it",
+    "url": "https://soheilfb.github.io/",
+    "image": "https://soheilfb.github.io/img/portrait.jpg",
+    "sameAs": [
+      "https://orcid.org/0009-0001-3289-9167",
+      "https://www.linkedin.com/in/soheil-fallah-bagherinezhad-b5253a19a",
+      "https://github.com/soheilfb"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
+  <a class="skip" href="#about">Skip to content</a>
 
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="index.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
+  <header class="site wrap">
+    <a class="wordmark" href="#top">Soheil Fallah Bagherinezhad</a>
+    <nav aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="about">
-    <h1 class="lg-heading">
-      About
-      <span class="text-secondary">Me</span>
-    </h1>
-    <h2 class="sm-heading">
-      Let me tell you a few things...
-    </h2>
-    <div class="about-info">
-      <img  style="width: 250px ; height: 250px;"src="img/portfolio.jpg" alt="John Doe" class="bio-image">
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="name">
+      <h1 id="name" class="name">Soheil Fallah<br>Bagherinezhad</h1>
 
-      <div class="bio">
-        <h3 class="text-secondary">BIO</h3>
-        <p> I am Soheil Fallah Bagherinezhad, a Computer Engineering student at the University of Guilan.
-		With a strong background in FPGA and VLSI design, computer architecture, cryptography, and hardware security, 
-		I am passionate about developing energy-efficient and high-performance computing solutions. I have practical 
-		experience working with FPGA boards, both in simulation and physical implementation, and I am eager to further 
-		expand my expertise in IoT systems and hardware accelerator networks.
-
-        </p>
-      </div>
-
-      <div class="job job-1">
-        <h3>skills</h3>
-        <h6> Technical Skills</h6>
-          <p>   VLSI DSP Techniques
-				Pipelining & Parallel Processing
-				Folding & Unfolding
-				Low-Power & High-Speed Digital Design
-				EDA & CAD Tools
-				Research & Documentation
-				Presenting & Teaching</p>
-		<h6> Programming Skills</h6>
-			    VHDL
-				Python
-				MATLAB
-				C / C++
+      <div class="intro">
+        <img class="portrait" src="img/portrait.jpg" srcset="img/portrait-360.jpg 360w, img/portrait.jpg 591w" sizes="(max-width: 640px) 132px, 232px" width="591" height="591" alt="Portrait of Soheil Fallah Bagherinezhad">
+        <div class="intro-text">
+          <p class="role">PhD student at the University of Trento, Italy</p>
+          <p class="lede">I work on photonic computing accelerators. Right now I am designing a high-speed FPGA datapath on an AMD RFSoC 4x2 that generates data, drives a laser with it and reads the light back. I am also very interested in approximate computing.</p>
+          <p class="links">
+            <a href="mailto:s.fallah@unitn.it">Email</a>
+            <a href="https://www.linkedin.com/in/soheil-fallah-bagherinezhad-b5253a19a">LinkedIn</a>
+            <a href="https://orcid.org/0009-0001-3289-9167">ORCID</a>
+            <a href="https://github.com/soheilfb">GitHub</a>
           </p>
+        </div>
       </div>
 
-      <div class="job job-2">
-        <h3>education</h3>
-        <h6>high school  </h6>
-        <p> I went to shahid beheshti highschool(sampad) in lahijan.</p>
-		<h6>University  </h6>
-        <p> Master of Engineering in Computer Systems Architecture
-			University of Guilan, Rasht, Iran (2020 – 2023)
-			Final Grade: 19.28/20 (4.0/4.0)</p>
-		<p> Bachelor of Science in Computer Engineering
-		    University of Guilan, Rasht, Iran (2015 – 2020) </p>
-		
+      <figure class="trace">
+        <div class="trace-plot">
+          <canvas id="trace" tabindex="0" role="img" aria-label="Plot of the name Soheil Fallah Bagherinezhad sent as 54 four-bit samples, drawn as a staircase between levels 0 and 15, with a smoothed received copy on top."></canvas>
+          <div class="trace-tip" id="trace-tip" aria-live="polite" hidden></div>
+        </div>
+        <figcaption>
+          My name as <span class="nw">4-bit</span> samples: each letter becomes two of 16 levels, the same format my RFSoC sends through the laser.
+          <span class="key key-tx">Blue</span> is the DAC output, <span class="key key-rx">red</span> a simulated copy after a band-limited channel.
+          Point at the trace, or focus it and use the arrow keys, to read it.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="block wrap" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="prose">
+        <p>I started my PhD in Computer Science in early 2026, supervised by Prof. Philippe Velha. It is funded by ARCHYTAS, a European project that studies non-conventional AI accelerators: optoelectronic, processing-in-memory and neuromorphic. My part is the architecture of heterogeneous reconfigurable systems built around photonic engines, and my research proposal is titled &ldquo;Co-Design of Heterogeneous Computing Architectures for Energy-Efficient Systems&rdquo;.</p>
+        <p>Before Trento I spent several years at the University of Guilan in Iran: a bachelor&rsquo;s in computer engineering, a master&rsquo;s in computer systems architecture, five years as a teaching assistant and two as a research assistant in computer arithmetic. My work there covered approximate arithmetic for machine-learning hardware, residue number systems and hardware security with physical unclonable functions.</p>
+        <p>I speak English and Persian. Away from the bench I go to the gym, play chess and online games like PUBG and FIFA, and follow Arsenal.</p>
       </div>
+    </section>
 
-      <div class="job job-3">
-        <h3>favorites</h3>
-        <h6>Video Games,Sports,New techs</h6>
-        <p>  I love playing video games and if it's online then that's better!! like : pubg and fifa online.
-             I love going to gym and playing chess too.
-             I am a big fan of Arsenal FC.
-           </p>
-         </div>
-              </div>
-                  </main>
+    <section class="block wrap" id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research</h2>
+      <ul class="list">
+        <li>Design a high-speed FPGA datapath that generates data, drives a laser and captures the light back for a photonic computing engine.
+          <span class="tools">RFSoC 4x2, Vivado, VHDL, PYNQ</span></li>
+        <li>Recover high-speed samples after the optical link with a Kalman filter on the receive side.
+          <span class="tools">RFSoC RF-ADCs, Python</span></li>
+        <li>Build an open analyzer for the RFSoC data converters, with live spectrum and scope views and DAC waveform control.
+          <span class="tools">Python, PYNQ, Jupyter</span></li>
+        <li>Port my group&rsquo;s butterfly SOA driver to the RFSoC and test the optical amplifier as an activation function.
+          <span class="tools">RFSoC Pmod I/O, VHDL</span></li>
+        <li>Design approximate compressors and multipliers for machine learning on FPGAs.
+          <span class="tools">VHDL, Vivado</span></li>
+        <li>Later, run neural-network inference on the RFSoC with number systems beyond binary, such as residue number systems.
+          <span class="tools">RFSoC 4x2, VHDL</span></li>
+      </ul>
+    </section>
 
-  <footer id="main-footer">
-    Copyright &copy; 2025
+    <section class="block wrap" id="publications" aria-labelledby="pubs-h">
+      <h2 id="pubs-h">Publications</h2>
+      <div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">Under review</span>
+            <div>
+              <p><b>S. F. Bagherinezhad</b>, M. Gholami, M. Aminian, H. Ahmadifar. Design of an approximate <span class="nw">12-bit</span> multiplier for implementation on FPGA with application in machine learning. <cite>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</cite> (TCAD), submitted May 2026.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Under review</span>
+            <div>
+              <p>Kalman filter recovery of high-speed data on reconfigurable systems. <cite>ARC 2027, International Symposium on Applied Reconfigurable Computing</cite>, long paper, submitted October 2026.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">2026</span>
+            <div>
+              <p>M. Gholami, H. Ahmadifar, <b>S. Fallah Bagherinezhad</b>. <a href="https://ecdj.ihu.ac.ir/article_210941_en.html">Design of an approximate and optimal 6-bit multiplier circuit for implementation on FPGA with application in machine learning</a>. <cite>Electronic and Cyber Defense</cite> 14(1), e210941.</p>
+              <p class="aside">In Persian, with an English abstract.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">2024</span>
+            <div>
+              <p>A. H. Hadipour, <b>S. Fallah</b>, H. Ahmadifar, M. Salehi. Providing an efficient discrete wavelet transform model based on residue number system. <cite>Computer Society of Iran Journal on Computing Science and Information Technology</cite>.</p>
+              <p class="aside">In Persian.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">2023</span>
+            <div>
+              <p>A. H. Hadipour, <b>S. Fallah Bagherinezhad</b>, et al. Designing an effective physical unclonable function using a delay-memory hybrid scheme. <cite>6th National Conference on New Technologies in Electrical, Computer and Mechanical Engineering of Iran</cite>.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">2023</span>
+            <div>
+              <p><b>S. Fallah Bagherinezhad</b>, A. H. Hadipour, M. Aminian, et al. Providing an improved lightweight physical unclonable function. <cite>6th National Conference on New Technologies in Electrical, Computer and Mechanical Engineering of Iran</cite>.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="after">The current list is also on <a href="https://orcid.org/0009-0001-3289-9167">ORCID</a>.</p>
+      </div>
+    </section>
+
+    <section class="block wrap" id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Experience</h2>
+      <ol class="rows">
+        <li class="row">
+          <span class="when">2026&ndash;now</span>
+          <div>
+            <h3>PhD researcher, University of Trento</h3>
+            <p>High-speed FPGA datapaths for a photonic computing accelerator, within the ARCHYTAS project.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2023&ndash;2025</span>
+          <div>
+            <h3>Research assistant, University of Guilan</h3>
+            <p>Approximate computing designs and their implementation on reconfigurable hardware, supervised by Dr. H. Ahmadifar and in collaboration with several Guilan faculty members. I also mentored junior students through the MSc thesis process, from the first idea to publication. Part of this work was published as a journal paper.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2018&ndash;2023</span>
+          <div>
+            <h3>Teaching assistant (part-time), University of Guilan</h3>
+            <p>Weekly two-hour Q&amp;A sessions and grading of assignments.</p>
+            <p class="aside">BSc courses: Digital Circuits, Computer Architecture, Computer-Aided Digital System Design (three times), Microprocessors and Assembly Language (twice), Digital Electronics.</p>
+            <p class="aside">MSc courses: Advanced Computer Architecture, Advanced VLSI System Design (twice), Reconfigurable Systems (twice), Computer Arithmetic, Hardware-Driven Security and Trust, Advanced Programming Language.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="block wrap" id="education" aria-labelledby="edu-h">
+      <h2 id="edu-h">Education</h2>
+      <ol class="rows">
+        <li class="row">
+          <span class="when">2026&ndash;2029</span>
+          <div>
+            <h3>PhD in Computer Science, University of Trento, Italy</h3>
+            <p>Supervisor: Prof. Philippe Velha. Funded by the European ARCHYTAS project. Expected to finish in January 2029.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2020&ndash;2023</span>
+          <div>
+            <h3>MSc in Computer Systems Architecture Engineering</h3>
+            <p>University of Guilan, Rasht, Iran. Final grade 19.28 out of 20.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2015&ndash;2020</span>
+          <div>
+            <h3>BSc in Computer Engineering</h3>
+            <p>University of Guilan, Rasht, Iran.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2011&ndash;2015</span>
+          <div>
+            <h3>High school, mathematics</h3>
+            <p>Shahid Beheshti High School, National Organization for Development of Exceptional Talents (Sampad), Lahijan, Iran.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="block wrap" id="awards" aria-labelledby="awards-h">
+      <h2 id="awards-h">Awards and honours</h2>
+      <ul class="rows">
+        <li class="row">
+          <span class="when">2023</span>
+          <p>Ranked 2nd among MSc graduates in Computer Engineering at the University of Guilan.</p>
+        </li>
+        <li class="row">
+          <span class="when">2015, 2020</span>
+          <p>Tuition waiver for the BSc and the MSc, University of Guilan.</p>
+        </li>
+        <li class="row">
+          <span class="when">2010</span>
+          <p>Admission to a school of the National Organization for Development of Exceptional Talents (Sampad), Iran.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block wrap" id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Bachelor&rsquo;s and master&rsquo;s projects</h2>
+      <ul class="list">
+        <li>Color Maze, a maze game with its own VGA controller.
+          <span class="tools">VHDL, Spartan-6 FPGA</span></li>
+        <li>Compressors for 8-bit multipliers (computer arithmetic).
+          <span class="tools">VHDL</span></li>
+        <li>CSA, compressor and arbiter PUF (APUF) circuits at transistor level.
+          <span class="tools">HSPICE</span></li>
+        <li>Layouts of half adders and other logic functions.
+          <span class="tools">L-Edit</span></li>
+        <li>Hardware/software co-design course project.</li>
+        <li>Minesweeper and tic-tac-toe games.
+          <span class="tools">Proteus</span></li>
+        <li>An IoT light switch controlled over the mobile network.
+          <span class="tools">Arduino Mini, GSM module</span></li>
+      </ul>
+    </section>
+
+    <section class="block wrap" id="certificates" aria-labelledby="cert-h">
+      <h2 id="cert-h">Certificates</h2>
+      <ul class="rows">
+        <li class="row">
+          <span class="when">2023</span>
+          <div>
+            <p><a href="https://www.coursera.org/account/accomplishments/certificate/9QLU9NNHPLQ9">Hardware Description Languages for FPGA Design</a>, University of Colorado Boulder, on Coursera.</p>
+          </div>
+        </li>
+        <li class="row">
+          <span class="when">2023</span>
+          <div>
+            <p><a href="https://www.coursera.org/account/accomplishments/certificate/7GCCTVFTUW3E">Hardware Security</a>, University of Maryland, on Coursera.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block wrap" id="toolbox" aria-labelledby="tools-h">
+      <h2 id="tools-h">Toolbox</h2>
+      <dl class="rows">
+        <div class="row">
+          <dt class="when">Hardware</dt>
+          <dd>VHDL and Verilog; Vivado block design and implementation; AMD RFSoC data converters, multi-tile synchronisation, AXI DMA and DDR4 datapaths; Zynq UltraScale+ and 7-series FPGAs.</dd>
+        </div>
+        <div class="row">
+          <dt class="when">Design methods</dt>
+          <dd>Approximate computing; pipelining, parallel processing, folding and unfolding; low-power and high-speed digital design; EDA and CAD tools.</dd>
+        </div>
+        <div class="row">
+          <dt class="when">Software</dt>
+          <dd>Python (PYNQ, NumPy, Jupyter), MATLAB, C and C++, assembly.</dd>
+        </div>
+        <div class="row">
+          <dt class="when">Lab</dt>
+          <dd>Sampling oscilloscopes, RF amplifiers, directly modulated lasers and photodiodes.</dd>
+        </div>
+        <div class="row">
+          <dt class="when">Also</dt>
+          <dd>Research writing, presenting and teaching.</dd>
+        </div>
+        <div class="row">
+          <dt class="when">Languages</dt>
+          <dd>English and Persian.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="block wrap" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <div class="prose">
+        <p class="email"><a href="mailto:s.fallah@unitn.it">s.fallah@unitn.it</a></p>
+        <p class="email"><a href="mailto:soheilfallah.sf7@gmail.com">soheilfallah.sf7@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    <p>&copy; 2026 Soheil Fallah Bagherinezhad. Last updated November 2026.</p>
   </footer>
 
-  <script >
-  
- // Select DOM Items
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('.nav-item');
-
-// Set Initial State Of Menu
-let showMenu = false;
-
-menuBtn.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-  if (!showMenu) {
-    menuBtn.classList.add('close');
-    menu.classList.add('show');
-    menuNav.classList.add('show');
-    menuBranding.classList.add('show');
-    navItems.forEach(item => item.classList.add('show'));
-
-    // Set Menu State
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove('close');
-    menu.classList.remove('show');
-    menuNav.classList.remove('show');
-    menuBranding.classList.remove('show');
-    navItems.forEach(item => item.classList.remove('show'));
-
-    // Set Menu State
-    showMenu = false;
-  }
-}
- 
-  
-  </script>
+  <script src="js/trace.js" defer></script>
 </body>
-
 </html>
